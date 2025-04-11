@@ -7,16 +7,15 @@
 
                                                 #using case
 
-puts "Tell the grade :"
-grade = gets.chomp().to_i
-
+puts "enter the grade :"
+grade = gets.chomp.to_i
 case grade
 when (1..5)
-    puts "elementary school"
+    puts "#{grade} is elementary school"
 when (6..8)
-    puts "middle school"
+    puts "#{grade} is middle school"
 when (9..12)
-    puts "high school"
+    puts "#{grade} is high school"
 else
     puts "college"
 end
@@ -24,7 +23,7 @@ end
                                             #using If-else
 
 
-def schoolLevel(grade)
+def school_level(grade)
     if grade>=1 && grade<=5
         puts "#{grade} is elementary school"
     elsif grade>=6 && grade<=8
@@ -34,9 +33,7 @@ def schoolLevel(grade)
     else
         puts "college"
     end
-    end 
-
-    puts "tell the grade :"
-    grade = gets.chomp().to_i
-
-    schoolLevel(grade)
+end 
+puts "enter the grade :"
+grade = gets.chomp.to_i
+school_level(grade)

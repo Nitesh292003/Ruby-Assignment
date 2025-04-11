@@ -1,4 +1,4 @@
 # 3. Print a-z in reverse
 albhabet =("a".."z")
-reverseAlphabet = albhabet.to_a().reverse()
-    puts reverseAlphabet.join(" ")
+reverse_alphabet = albhabet.to_a.reverse
+puts reverse_alphabet.join(" ")
